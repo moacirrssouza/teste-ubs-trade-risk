@@ -314,16 +314,6 @@ Exemplo de logs:
 ### 5. **Dependency Injection Nativa**
 - **Justificativa**: Built-in no ASP.NET Core, reduz dependências externas
 
-## Próximas Melhorias
-
-- [ ] Adicionar autenticação e autorização
-- [ ] Implementar rate limiting
-- [ ] Adicionar cache distribuído (Redis)
-- [ ] Criar migrations automáticas
-- [ ] Adicionar métricas e health checks
-- [ ] Implementar paginação para resultados grandes
-- [ ] Adicionar suporte a batch imports
-
 ## Licença
 
 Desenvolvido para fins educacionais e técnicos.
