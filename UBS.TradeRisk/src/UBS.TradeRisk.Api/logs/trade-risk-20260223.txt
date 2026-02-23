@@ -1,0 +1,112 @@
+2026-02-23 16:41:30.981 -03:00 [INF] Iniciando a aplicação
+2026-02-23 16:41:31.669 -03:00 [INF] Now listening on: https://localhost:7111
+2026-02-23 16:41:31.675 -03:00 [INF] Now listening on: http://localhost:5029
+2026-02-23 16:41:31.756 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-23 16:41:31.759 -03:00 [INF] Hosting environment: Development
+2026-02-23 16:41:31.760 -03:00 [INF] Content root path: C:\Projetos\teste-ubs-trade-risk\UBS.TradeRisk\src\UBS.TradeRisk.Api
+2026-02-23 16:41:41.204 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7111/swagger/index.html - null null
+2026-02-23 16:41:42.001 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7111/swagger/index.html - 200 null text/html;charset=utf-8 811.0681ms
+2026-02-23 16:41:42.168 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7111/_vs/browserLink - null null
+2026-02-23 16:41:42.168 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7111/_framework/aspnetcore-browser-refresh.js - null null
+2026-02-23 16:41:42.294 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7111/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 129.819ms
+2026-02-23 16:41:43.455 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7111/_vs/browserLink - 200 null text/javascript; charset=UTF-8 1291.6106ms
+2026-02-23 16:41:44.344 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7111/swagger/v1/swagger.json - null null
+2026-02-23 16:41:44.399 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7111/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 56.4397ms
+2026-02-23 16:44:39.354 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7111/api/RiskAnalysis/analyze - application/json 90
+2026-02-23 16:44:39.690 -03:00 [INF] CORS policy execution successful.
+2026-02-23 16:44:39.753 -03:00 [INF] Executing endpoint 'UBS.TradeRisk.Api.Controllers.RiskAnalysisController.AnalyzeRiskDistribution (UBS.TradeRisk.Api)'
+2026-02-23 16:44:40.007 -03:00 [INF] Route matched with {action = "AnalyzeRiskDistribution", controller = "RiskAnalysis"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AnalyzeRiskDistribution(System.Collections.Generic.List`1[UBS.TradeRisk.Application.DTOs.TradeInputDto]) on controller UBS.TradeRisk.Api.Controllers.RiskAnalysisController (UBS.TradeRisk.Api).
+2026-02-23 16:44:41.317 -03:00 [INF] Iniciando análise de distribuição de risco para 1 trades
+2026-02-23 16:44:41.364 -03:00 [INF] Análise completada em 34ms para 1 trades
+2026-02-23 16:44:41.398 -03:00 [INF] Executing OkObjectResult, writing value of type 'UBS.TradeRisk.Application.DTOs.RiskDistributionAnalysisResponseDto'.
+2026-02-23 16:44:41.499 -03:00 [INF] Executed action UBS.TradeRisk.Api.Controllers.RiskAnalysisController.AnalyzeRiskDistribution (UBS.TradeRisk.Api) in 1473.7668ms
+2026-02-23 16:44:41.504 -03:00 [INF] Executed endpoint 'UBS.TradeRisk.Api.Controllers.RiskAnalysisController.AnalyzeRiskDistribution (UBS.TradeRisk.Api)'
+2026-02-23 16:44:41.512 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7111/api/RiskAnalysis/analyze - 200 null application/json; charset=utf-8 2258.235ms
+2026-02-23 16:54:11.893 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7111/api/RiskAnalysis/analyze - application/json 337
+2026-02-23 16:54:12.025 -03:00 [INF] Executing endpoint 'UBS.TradeRisk.Api.Controllers.RiskAnalysisController.AnalyzeRiskDistribution (UBS.TradeRisk.Api)'
+2026-02-23 16:54:12.061 -03:00 [INF] Route matched with {action = "AnalyzeRiskDistribution", controller = "RiskAnalysis"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AnalyzeRiskDistribution(System.Collections.Generic.List`1[UBS.TradeRisk.Application.DTOs.TradeInputDto]) on controller UBS.TradeRisk.Api.Controllers.RiskAnalysisController (UBS.TradeRisk.Api).
+2026-02-23 16:54:12.169 -03:00 [INF] Iniciando análise de distribuição de risco para 4 trades
+2026-02-23 16:54:12.177 -03:00 [INF] Análise completada em 3ms para 4 trades
+2026-02-23 16:54:12.194 -03:00 [INF] Executing OkObjectResult, writing value of type 'UBS.TradeRisk.Application.DTOs.RiskDistributionAnalysisResponseDto'.
+2026-02-23 16:54:12.236 -03:00 [INF] Executed action UBS.TradeRisk.Api.Controllers.RiskAnalysisController.AnalyzeRiskDistribution (UBS.TradeRisk.Api) in 165.4502ms
+2026-02-23 16:54:12.243 -03:00 [INF] Executed endpoint 'UBS.TradeRisk.Api.Controllers.RiskAnalysisController.AnalyzeRiskDistribution (UBS.TradeRisk.Api)'
+2026-02-23 16:54:12.251 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7111/api/RiskAnalysis/analyze - 200 null application/json; charset=utf-8 381.0675ms
+2026-02-23 16:59:58.943 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7111/api/RiskAnalysis/analyze - application/json 337
+2026-02-23 16:59:59.010 -03:00 [INF] Executing endpoint 'UBS.TradeRisk.Api.Controllers.RiskAnalysisController.AnalyzeRiskDistribution (UBS.TradeRisk.Api)'
+2026-02-23 16:59:59.027 -03:00 [INF] Route matched with {action = "AnalyzeRiskDistribution", controller = "RiskAnalysis"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AnalyzeRiskDistribution(System.Collections.Generic.List`1[UBS.TradeRisk.Application.DTOs.TradeInputDto]) on controller UBS.TradeRisk.Api.Controllers.RiskAnalysisController (UBS.TradeRisk.Api).
+2026-02-23 16:59:59.072 -03:00 [INF] Iniciando análise de distribuição de risco para 4 trades
+2026-02-23 16:59:59.075 -03:00 [INF] Análise completada em 1ms para 4 trades
+2026-02-23 16:59:59.079 -03:00 [INF] Executing OkObjectResult, writing value of type 'UBS.TradeRisk.Application.DTOs.RiskDistributionAnalysisResponseDto'.
+2026-02-23 16:59:59.092 -03:00 [INF] Executed action UBS.TradeRisk.Api.Controllers.RiskAnalysisController.AnalyzeRiskDistribution (UBS.TradeRisk.Api) in 53.8409ms
+2026-02-23 16:59:59.098 -03:00 [INF] Executed endpoint 'UBS.TradeRisk.Api.Controllers.RiskAnalysisController.AnalyzeRiskDistribution (UBS.TradeRisk.Api)'
+2026-02-23 16:59:59.101 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7111/api/RiskAnalysis/analyze - 200 null application/json; charset=utf-8 179.1634ms
+2026-02-23 17:00:33.813 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7111/api/TradesClassification/classify - application/json 87
+2026-02-23 17:00:33.887 -03:00 [INF] CORS policy execution successful.
+2026-02-23 17:00:33.896 -03:00 [INF] Executing endpoint 'UBS.TradeRisk.Api.Controllers.TradesClassificationController.ClassifyTrades (UBS.TradeRisk.Api)'
+2026-02-23 17:00:34.037 -03:00 [INF] Route matched with {action = "ClassifyTrades", controller = "TradesClassification"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ClassifyTrades(System.Collections.Generic.List`1[UBS.TradeRisk.Application.DTOs.TradeInputDto]) on controller UBS.TradeRisk.Api.Controllers.TradesClassificationController (UBS.TradeRisk.Api).
+2026-02-23 17:00:34.108 -03:00 [INF] Iniciando classificação de 1 trades
+2026-02-23 17:00:34.119 -03:00 [INF] Classificação completada com sucesso para 1 trades
+2026-02-23 17:00:34.124 -03:00 [INF] Executing OkObjectResult, writing value of type 'UBS.TradeRisk.Application.DTOs.TradeClassificationResponseDto'.
+2026-02-23 17:00:34.165 -03:00 [INF] Executed action UBS.TradeRisk.Api.Controllers.TradesClassificationController.ClassifyTrades (UBS.TradeRisk.Api) in 124.0107ms
+2026-02-23 17:00:34.172 -03:00 [INF] Executed endpoint 'UBS.TradeRisk.Api.Controllers.TradesClassificationController.ClassifyTrades (UBS.TradeRisk.Api)'
+2026-02-23 17:00:34.175 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7111/api/TradesClassification/classify - 200 null application/json; charset=utf-8 379.0314ms
+2026-02-23 17:01:57.899 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7111/api/TradesClassification/classify - application/json 337
+2026-02-23 17:01:57.998 -03:00 [INF] CORS policy execution successful.
+2026-02-23 17:01:58.011 -03:00 [INF] Executing endpoint 'UBS.TradeRisk.Api.Controllers.TradesClassificationController.ClassifyTrades (UBS.TradeRisk.Api)'
+2026-02-23 17:01:58.037 -03:00 [INF] Route matched with {action = "ClassifyTrades", controller = "TradesClassification"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ClassifyTrades(System.Collections.Generic.List`1[UBS.TradeRisk.Application.DTOs.TradeInputDto]) on controller UBS.TradeRisk.Api.Controllers.TradesClassificationController (UBS.TradeRisk.Api).
+2026-02-23 17:01:58.109 -03:00 [INF] Iniciando classificação de 4 trades
+2026-02-23 17:01:58.120 -03:00 [INF] Classificação completada com sucesso para 4 trades
+2026-02-23 17:01:58.132 -03:00 [INF] Executing OkObjectResult, writing value of type 'UBS.TradeRisk.Application.DTOs.TradeClassificationResponseDto'.
+2026-02-23 17:01:58.149 -03:00 [INF] Executed action UBS.TradeRisk.Api.Controllers.TradesClassificationController.ClassifyTrades (UBS.TradeRisk.Api) in 104.4185ms
+2026-02-23 17:01:58.157 -03:00 [INF] Executed endpoint 'UBS.TradeRisk.Api.Controllers.TradesClassificationController.ClassifyTrades (UBS.TradeRisk.Api)'
+2026-02-23 17:01:58.169 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7111/api/TradesClassification/classify - 200 null application/json; charset=utf-8 383.0676ms
+2026-02-23 18:36:08.681 -03:00 [INF] Iniciando a aplicação
+2026-02-23 18:36:09.319 -03:00 [INF] Now listening on: https://localhost:7111
+2026-02-23 18:36:09.324 -03:00 [INF] Now listening on: http://localhost:5029
+2026-02-23 18:36:09.396 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-23 18:36:09.398 -03:00 [INF] Hosting environment: Development
+2026-02-23 18:36:09.400 -03:00 [INF] Content root path: C:\Projetos\teste-ubs-trade-risk\UBS.TradeRisk\src\UBS.TradeRisk.Api
+2026-02-23 18:36:15.604 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7111/swagger/index.html - null null
+2026-02-23 18:36:16.121 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7111/swagger/index.html - 200 null text/html;charset=utf-8 528.106ms
+2026-02-23 18:36:16.310 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7111/_framework/aspnetcore-browser-refresh.js - null null
+2026-02-23 18:36:16.342 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7111/_vs/browserLink - null null
+2026-02-23 18:36:16.347 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7111/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 36.9849ms
+2026-02-23 18:36:16.616 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7111/_vs/browserLink - 200 null text/javascript; charset=UTF-8 274.9141ms
+2026-02-23 18:36:16.855 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7111/swagger/v1/swagger.json - null null
+2026-02-23 18:36:16.906 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7111/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 51.3043ms
+2026-02-23 18:37:12.008 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7111/api/RiskAnalysis/analyze - application/json 337
+2026-02-23 18:37:12.232 -03:00 [INF] Executing endpoint 'UBS.TradeRisk.Api.Controllers.RiskAnalysisController.AnalyzeRiskDistribution (UBS.TradeRisk.Api)'
+2026-02-23 18:37:12.460 -03:00 [INF] Route matched with {action = "AnalyzeRiskDistribution", controller = "RiskAnalysis"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AnalyzeRiskDistribution(System.Collections.Generic.List`1[UBS.TradeRisk.Application.DTOs.TradeInputDto]) on controller UBS.TradeRisk.Api.Controllers.RiskAnalysisController (UBS.TradeRisk.Api).
+2026-02-23 18:37:12.802 -03:00 [INF] Iniciando análise de distribuição de risco para 4 trades
+2026-02-23 18:37:12.830 -03:00 [INF] Análise completada em 21ms para 4 trades
+2026-02-23 18:37:12.846 -03:00 [INF] Executing OkObjectResult, writing value of type 'UBS.TradeRisk.Application.DTOs.RiskDistributionAnalysisResponseDto'.
+2026-02-23 18:37:12.895 -03:00 [INF] Executed action UBS.TradeRisk.Api.Controllers.RiskAnalysisController.AnalyzeRiskDistribution (UBS.TradeRisk.Api) in 422.2717ms
+2026-02-23 18:37:12.902 -03:00 [INF] Executed endpoint 'UBS.TradeRisk.Api.Controllers.RiskAnalysisController.AnalyzeRiskDistribution (UBS.TradeRisk.Api)'
+2026-02-23 18:37:12.906 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7111/api/RiskAnalysis/analyze - 200 null application/json; charset=utf-8 912.1417ms
+2026-02-23 18:37:30.943 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7111/api/RiskAnalysis/analyze - application/json 337
+2026-02-23 18:37:30.953 -03:00 [INF] Executing endpoint 'UBS.TradeRisk.Api.Controllers.RiskAnalysisController.AnalyzeRiskDistribution (UBS.TradeRisk.Api)'
+2026-02-23 18:37:30.957 -03:00 [INF] Route matched with {action = "AnalyzeRiskDistribution", controller = "RiskAnalysis"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AnalyzeRiskDistribution(System.Collections.Generic.List`1[UBS.TradeRisk.Application.DTOs.TradeInputDto]) on controller UBS.TradeRisk.Api.Controllers.RiskAnalysisController (UBS.TradeRisk.Api).
+2026-02-23 18:37:30.965 -03:00 [INF] Iniciando análise de distribuição de risco para 4 trades
+2026-02-23 18:37:30.968 -03:00 [INF] Análise completada em 0ms para 4 trades
+2026-02-23 18:37:30.971 -03:00 [INF] Executing OkObjectResult, writing value of type 'UBS.TradeRisk.Application.DTOs.RiskDistributionAnalysisResponseDto'.
+2026-02-23 18:37:30.974 -03:00 [INF] Executed action UBS.TradeRisk.Api.Controllers.RiskAnalysisController.AnalyzeRiskDistribution (UBS.TradeRisk.Api) in 12.2727ms
+2026-02-23 18:37:30.976 -03:00 [INF] Executed endpoint 'UBS.TradeRisk.Api.Controllers.RiskAnalysisController.AnalyzeRiskDistribution (UBS.TradeRisk.Api)'
+2026-02-23 18:37:30.977 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7111/api/RiskAnalysis/analyze - 200 null application/json; charset=utf-8 33.8589ms
+2026-02-23 18:37:46.505 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7111/api/RiskAnalysis/analyze - application/json 337
+2026-02-23 18:37:46.517 -03:00 [INF] Executing endpoint 'UBS.TradeRisk.Api.Controllers.RiskAnalysisController.AnalyzeRiskDistribution (UBS.TradeRisk.Api)'
+2026-02-23 18:37:46.520 -03:00 [INF] Route matched with {action = "AnalyzeRiskDistribution", controller = "RiskAnalysis"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AnalyzeRiskDistribution(System.Collections.Generic.List`1[UBS.TradeRisk.Application.DTOs.TradeInputDto]) on controller UBS.TradeRisk.Api.Controllers.RiskAnalysisController (UBS.TradeRisk.Api).
+2026-02-23 18:37:46.533 -03:00 [INF] Iniciando análise de distribuição de risco para 4 trades
+2026-02-23 18:37:46.544 -03:00 [INF] Análise completada em 7ms para 4 trades
+2026-02-23 18:37:46.547 -03:00 [INF] Executing OkObjectResult, writing value of type 'UBS.TradeRisk.Application.DTOs.RiskDistributionAnalysisResponseDto'.
+2026-02-23 18:37:46.572 -03:00 [INF] Executed action UBS.TradeRisk.Api.Controllers.RiskAnalysisController.AnalyzeRiskDistribution (UBS.TradeRisk.Api) in 47.9914ms
+2026-02-23 18:37:46.575 -03:00 [INF] Executed endpoint 'UBS.TradeRisk.Api.Controllers.RiskAnalysisController.AnalyzeRiskDistribution (UBS.TradeRisk.Api)'
+2026-02-23 18:37:46.595 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7111/api/RiskAnalysis/analyze - 200 null application/json; charset=utf-8 91.3801ms
+2026-02-23 18:38:09.908 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7111/api/RiskAnalysis/analyze - application/json 338
+2026-02-23 18:38:09.917 -03:00 [INF] Executing endpoint 'UBS.TradeRisk.Api.Controllers.RiskAnalysisController.AnalyzeRiskDistribution (UBS.TradeRisk.Api)'
+2026-02-23 18:38:09.920 -03:00 [INF] Route matched with {action = "AnalyzeRiskDistribution", controller = "RiskAnalysis"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AnalyzeRiskDistribution(System.Collections.Generic.List`1[UBS.TradeRisk.Application.DTOs.TradeInputDto]) on controller UBS.TradeRisk.Api.Controllers.RiskAnalysisController (UBS.TradeRisk.Api).
+2026-02-23 18:38:09.924 -03:00 [INF] Iniciando análise de distribuição de risco para 4 trades
+2026-02-23 18:38:09.926 -03:00 [INF] Análise completada em 0ms para 4 trades
+2026-02-23 18:38:09.927 -03:00 [INF] Executing OkObjectResult, writing value of type 'UBS.TradeRisk.Application.DTOs.RiskDistributionAnalysisResponseDto'.
+2026-02-23 18:38:09.931 -03:00 [INF] Executed action UBS.TradeRisk.Api.Controllers.RiskAnalysisController.AnalyzeRiskDistribution (UBS.TradeRisk.Api) in 9.4794ms
+2026-02-23 18:38:09.934 -03:00 [INF] Executed endpoint 'UBS.TradeRisk.Api.Controllers.RiskAnalysisController.AnalyzeRiskDistribution (UBS.TradeRisk.Api)'
+2026-02-23 18:38:09.937 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7111/api/RiskAnalysis/analyze - 200 null application/json; charset=utf-8 29.2672ms

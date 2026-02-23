@@ -1,0 +1,32 @@
+<Solution>
+  <Folder Name="/docs/">
+    <File Path="docs/ARQUITETURA_TECNICA.md" />
+    <File Path="docs/AZURE_DEPLOY.md" />
+    <File Path="docs/BANCO_DE_DADOS.md" />
+    <File Path="docs/CHECKLIST_FINAL_COM_DOCKER.md" />
+    <File Path="docs/DIAGRAMAS.md" />
+    <File Path="docs/DOCKER.md" />
+    <File Path="docs/DOCKER_QUICK_START.md" />
+    <File Path="docs/DOCKER_RESUMO.md" />
+    <File Path="docs/ENTREGA_FINAL.md" />
+    <File Path="docs/ESTRUTURA.md" />
+    <File Path="docs/EXEMPLOS_USO.md" />
+    <File Path="docs/GUIA_DESENVOLVIMENTO.md" />
+    <File Path="docs/INDEX.md" />
+    <File Path="docs/nginx.conf" />
+    <File Path="docs/QUICK_START.md" />
+    <File Path="docs/RESUMO_IMPLEMENTACAO.md" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/UBS.TradeRisk.Api/UBS.TradeRisk.Api.csproj" />
+    <Project Path="src/UBS.TradeRisk.Application/UBS.TradeRisk.Application.csproj" />
+    <Project Path="src/UBS.TradeRisk.Domain/UBS.TradeRisk.Domain.csproj" />
+    <Project Path="src/UBS.TradeRisk.Infra/UBS.TradeRisk.Infra.csproj" />
+  </Folder>
+  <Folder Name="/test/">
+    <Project Path="tests/UBS.TradeRisk.Tests/UBS.TradeRisk.Tests.csproj" />
+  </Folder>
+  <Project Path="docker-compose.dcproj">
+    <Build />
+  </Project>
+</Solution>

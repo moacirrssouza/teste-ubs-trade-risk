@@ -1,0 +1,96 @@
+@baseUrl = http://localhost:5029
+@contentType = application/json
+
+###
+### Trade Classification - Simple Example
+### POST endpoint that classifies a list of trades and returns categories
+POST {{baseUrl}}/api/trades/classify
+Content-Type: {{contentType}}
+
+[
+  {
+    "value": 2000000,
+    "clientSector": "Private",
+    "clientId": "CLI001"
+  },
+  {
+    "value": 400000,
+    "clientSector": "Public",
+    "clientId": "CLI002"
+  },
+  {
+    "value": 500000,
+    "clientSector": "Public",
+    "clientId": "CLI003"
+  },
+  {
+    "value": 3000000,
+    "clientSector": "Public",
+    "clientId": "CLI004"
+  }
+]
+
+###
+### Risk Distribution Analysis - Complete Example
+### POST endpoint that analyzes risk distribution with summary statistics
+POST {{baseUrl}}/api/riskanalysis/analyze
+Content-Type: {{contentType}}
+
+[
+  {
+    "value": 2000000,
+    "clientSector": "Private",
+    "clientId": "CLI001"
+  },
+  {
+    "value": 400000,
+    "clientSector": "Public",
+    "clientId": "CLI002"
+  },
+  {
+    "value": 500000,
+    "clientSector": "Public",
+    "clientId": "CLI003"
+  },
+  {
+    "value": 3000000,
+    "clientSector": "Public",
+    "clientId": "CLI004"
+  }
+]
+
+###
+### Risk Distribution Analysis - Large Dataset (1000 trades)
+### Tests performance and scalability
+POST {{baseUrl}}/api/riskanalysis/analyze
+Content-Type: {{contentType}}
+
+# This would be generated programmatically in a real scenario
+# For demonstration, showing structure with representative samples
+[
+  {
+    "value": 1500000,
+    "clientSector": "Public",
+    "clientId": "CLI001"
+  },
+  {
+    "value": 750000,
+    "clientSector": "Private",
+    "clientId": "CLI002"
+  },
+  {
+    "value": 2500000,
+    "clientSector": "Public",
+    "clientId": "CLI003"
+  },
+  {
+    "value": 500000,
+    "clientSector": "Public",
+    "clientId": "CLI004"
+  },
+  {
+    "value": 1000000,
+    "clientSector": "Private",
+    "clientId": "CLI005"
+  }
+]

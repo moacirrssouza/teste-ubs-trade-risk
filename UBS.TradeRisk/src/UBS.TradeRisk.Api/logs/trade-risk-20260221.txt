@@ -1,0 +1,76 @@
+2026-02-21 20:50:30.585 -03:00 [INF] Iniciando a aplicação
+2026-02-21 20:50:31.423 -03:00 [INF] Now listening on: https://localhost:7111
+2026-02-21 20:50:31.431 -03:00 [INF] Now listening on: http://localhost:5029
+2026-02-21 20:50:31.524 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-21 20:50:31.527 -03:00 [INF] Hosting environment: Development
+2026-02-21 20:50:31.529 -03:00 [INF] Content root path: C:\Workspace\teste-ubs-ag\UBS.TradeRisk\UBS.TradeRisk.Api
+2026-02-21 20:50:37.875 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7111/swagger - null null
+2026-02-21 20:50:38.545 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7111/swagger - 301 null null 683.1677ms
+2026-02-21 20:50:38.579 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7111/swagger/index.html - null null
+2026-02-21 20:50:38.742 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7111/swagger/index.html - 200 null text/html;charset=utf-8 162.6293ms
+2026-02-21 20:50:39.104 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7111/swagger/swagger-ui.css - null null
+2026-02-21 20:50:39.111 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7111/swagger/swagger-ui-bundle.js - null null
+2026-02-21 20:50:39.112 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7111/_framework/aspnetcore-browser-refresh.js - null null
+2026-02-21 20:50:39.111 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7111/swagger/swagger-ui-standalone-preset.js - null null
+2026-02-21 20:50:39.117 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7111/_vs/browserLink - null null
+2026-02-21 20:50:39.150 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7111/_framework/aspnetcore-browser-refresh.js - 200 14939 application/javascript; charset=utf-8 38.4178ms
+2026-02-21 20:50:39.254 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-02-21 20:50:39.254 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-02-21 20:50:39.259 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7111/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 148.3381ms
+2026-02-21 20:50:39.262 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7111/swagger/swagger-ui.css - 200 152034 text/css 158.7585ms
+2026-02-21 20:50:39.442 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-02-21 20:50:39.446 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7111/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 335.2935ms
+2026-02-21 20:50:39.859 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7111/_vs/browserLink - 200 null text/javascript; charset=UTF-8 743.0902ms
+2026-02-21 20:50:40.103 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7111/swagger/v1/swagger.json - null null
+2026-02-21 20:50:40.130 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7111/swagger/favicon-32x32.png - null null
+2026-02-21 20:50:40.134 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-02-21 20:50:40.138 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7111/swagger/favicon-32x32.png - 200 628 image/png 8.6349ms
+2026-02-21 20:50:40.138 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7111/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 35.61ms
+2026-02-21 21:57:45.460 -03:00 [INF] Iniciando a aplicação
+2026-02-21 21:57:46.601 -03:00 [INF] Now listening on: https://localhost:7111
+2026-02-21 21:57:46.642 -03:00 [INF] Now listening on: http://localhost:5029
+2026-02-21 21:57:46.936 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-21 21:57:46.968 -03:00 [INF] Hosting environment: Development
+2026-02-21 21:57:46.973 -03:00 [INF] Content root path: C:\Workspace\teste-ubs-ag\UBS.TradeRisk\src\UBS.TradeRisk.Api
+2026-02-21 21:58:01.248 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7111/swagger/index.html - null null
+2026-02-21 21:58:02.259 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7111/swagger/index.html - 200 null text/html;charset=utf-8 1037.1611ms
+2026-02-21 21:58:02.420 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7111/_framework/aspnetcore-browser-refresh.js - null null
+2026-02-21 21:58:02.481 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7111/_framework/aspnetcore-browser-refresh.js - 200 14939 application/javascript; charset=utf-8 60.7256ms
+2026-02-21 21:58:02.486 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7111/_vs/browserLink - null null
+2026-02-21 21:58:02.864 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7111/_vs/browserLink - 200 null text/javascript; charset=UTF-8 378.0507ms
+2026-02-21 21:58:03.232 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7111/swagger/v1/swagger.json - null null
+2026-02-21 21:58:03.370 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7111/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 137.5751ms
+2026-02-21 21:59:25.011 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7111/api/RiskAnalysis/analyze - application/json 53
+2026-02-21 21:59:25.166 -03:00 [INF] CORS policy execution successful.
+2026-02-21 21:59:25.193 -03:00 [INF] Executing endpoint 'UBS.TradeRisk.Api.Controllers.RiskAnalysisController.AnalyzeRiskDistribution (UBS.TradeRisk.Api)'
+2026-02-21 21:59:25.319 -03:00 [INF] Route matched with {action = "AnalyzeRiskDistribution", controller = "RiskAnalysis"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AnalyzeRiskDistribution(System.Collections.Generic.List`1[UBS.TradeRisk.Application.DTOs.TradeInputDto]) on controller UBS.TradeRisk.Api.Controllers.RiskAnalysisController (UBS.TradeRisk.Api).
+2026-02-21 21:59:25.517 -03:00 [INF] Iniciando análise de distribuição de risco para 1 trades
+2026-02-21 21:59:26.068 -03:00 [WRN] Erro de validação ao analisar risco: Trade 0: Client ID is required (Parameter 'trades')
+2026-02-21 21:59:26.081 -03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-02-21 21:59:26.101 -03:00 [INF] Executed action UBS.TradeRisk.Api.Controllers.RiskAnalysisController.AnalyzeRiskDistribution (UBS.TradeRisk.Api) in 773.1939ms
+2026-02-21 21:59:26.106 -03:00 [INF] Executed endpoint 'UBS.TradeRisk.Api.Controllers.RiskAnalysisController.AnalyzeRiskDistribution (UBS.TradeRisk.Api)'
+2026-02-21 21:59:26.108 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7111/api/RiskAnalysis/analyze - 400 null application/json; charset=utf-8 1113.5814ms
+2026-02-21 21:59:49.200 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7111/api/TradesClassification/classify - application/json 82
+2026-02-21 21:59:49.220 -03:00 [INF] CORS policy execution successful.
+2026-02-21 21:59:49.223 -03:00 [INF] Executing endpoint 'UBS.TradeRisk.Api.Controllers.TradesClassificationController.ClassifyTrades (UBS.TradeRisk.Api)'
+2026-02-21 21:59:49.229 -03:00 [INF] Route matched with {action = "ClassifyTrades", controller = "TradesClassification"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ClassifyTrades(System.Collections.Generic.List`1[UBS.TradeRisk.Application.DTOs.TradeInputDto]) on controller UBS.TradeRisk.Api.Controllers.TradesClassificationController (UBS.TradeRisk.Api).
+2026-02-21 21:59:49.246 -03:00 [INF] Iniciando classificação de 1 trades
+2026-02-21 21:59:49.285 -03:00 [WRN] Erro de validação ao classificar trades: Trade 0: Value must be greater than zero; Trade 0: Client sector must be 'Public' or 'Private' (Parameter 'trades')
+2026-02-21 21:59:49.288 -03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-02-21 21:59:49.291 -03:00 [INF] Executed action UBS.TradeRisk.Api.Controllers.TradesClassificationController.ClassifyTrades (UBS.TradeRisk.Api) in 57.8935ms
+2026-02-21 21:59:49.293 -03:00 [INF] Executed endpoint 'UBS.TradeRisk.Api.Controllers.TradesClassificationController.ClassifyTrades (UBS.TradeRisk.Api)'
+2026-02-21 21:59:49.294 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7111/api/TradesClassification/classify - 400 null application/json; charset=utf-8 94.2441ms
+2026-02-21 22:16:51.566 -03:00 [INF] Iniciando a aplicação
+2026-02-21 22:16:52.726 -03:00 [INF] Now listening on: https://localhost:7111
+2026-02-21 22:16:52.737 -03:00 [INF] Now listening on: http://localhost:5029
+2026-02-21 22:16:52.845 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-21 22:16:52.853 -03:00 [INF] Hosting environment: Development
+2026-02-21 22:16:52.855 -03:00 [INF] Content root path: C:\Workspace\teste-ubs-ag\UBS.TradeRisk\src\UBS.TradeRisk.Api
+2026-02-21 22:16:54.834 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7111/swagger/index.html - null null
+2026-02-21 22:16:55.337 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7111/swagger/index.html - 200 null text/html;charset=utf-8 519.2429ms
+2026-02-21 22:16:55.355 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7111/_framework/aspnetcore-browser-refresh.js - null null
+2026-02-21 22:16:55.358 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7111/_vs/browserLink - null null
+2026-02-21 22:16:55.386 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7111/_framework/aspnetcore-browser-refresh.js - 200 14939 application/javascript; charset=utf-8 32.3933ms
+2026-02-21 22:16:55.853 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7111/_vs/browserLink - 200 null text/javascript; charset=UTF-8 496.0572ms
+2026-02-21 22:16:56.019 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7111/swagger/v1/swagger.json - null null
+2026-02-21 22:16:56.046 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7111/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 27.3186ms

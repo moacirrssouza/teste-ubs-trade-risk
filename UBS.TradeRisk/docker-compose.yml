@@ -1,0 +1,62 @@
+version: '3.8'
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: traderisk-sqlserver
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "${DB_SA_PASSWORD:-P@ssw0rd2024!Secure}"
+      MSSQL_PID: "Express"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+    healthcheck:
+      test: ["CMD", "/opt/mssql-tools/bin/sqlcmd", "-S", "localhost", "-U", "sa", "-P", "${DB_SA_PASSWORD:-P@ssw0rd2024!Secure}", "-Q", "SELECT 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    networks:
+      - traderisk-network
+    security_opt:
+      - no-new-privileges:true
+
+  ubs.traderisk.api:
+    image: ${DOCKER_REGISTRY-}ubstraderiskapi:latest
+    container_name: traderisk-api
+    build:
+      context: .
+      dockerfile: src/UBS.TradeRisk.Api/Dockerfile
+      args:
+        BUILD_CONFIGURATION: Release
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_HTTP_PORT=8080
+      - ASPNETCORE_HTTPS_PORT=8081
+      - ConnectionStrings__DefaultConnection=Server=sqlserver,1433;Database=TradeRiskDb;User Id=sa;Password=${DB_SA_PASSWORD:-P@ssw0rd2024!Secure};TrustServerCertificate=true;Encrypt=false;Connection Timeout=30;
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=${ASPNETCORE_CERT_PASSWORD:-}
+    ports:
+      - "8080:8080"
+      - "8081:8081"
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+    networks:
+      - traderisk-network
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    cap_add:
+      - NET_BIND_SERVICE
+
+volumes:
+  sqlserver_data:
+    driver: local
+
+networks:
+  traderisk-network:
+    driver: bridge

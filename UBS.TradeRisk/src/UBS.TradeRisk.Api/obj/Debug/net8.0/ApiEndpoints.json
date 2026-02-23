@@ -1,0 +1,82 @@
+[
+  {
+    "ContainingType": "UBS.TradeRisk.Api.Controllers.RiskAnalysisController",
+    "Method": "AnalyzeRiskDistribution",
+    "RelativePath": "api/RiskAnalysis/analyze",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "trades",
+        "Type": "System.Collections.Generic.List\u00601[[UBS.TradeRisk.Application.DTOs.TradeInputDto, UBS.TradeRisk.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UBS.TradeRisk.Application.DTOs.RiskDistributionAnalysisResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "UBS.TradeRisk.Api.Controllers.TradesClassificationController",
+    "Method": "ClassifyTrades",
+    "RelativePath": "api/TradesClassification/classify",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "trades",
+        "Type": "System.Collections.Generic.List\u00601[[UBS.TradeRisk.Application.DTOs.TradeInputDto, UBS.TradeRisk.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UBS.TradeRisk.Application.DTOs.TradeClassificationResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  }
+]

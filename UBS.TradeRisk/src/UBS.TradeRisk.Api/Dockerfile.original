@@ -1,0 +1,53 @@
+# Dockerfile para a API .NET 8 com Multi-stage Build
+
+# Stage 1: Build
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+
+WORKDIR /src
+
+# Copiar arquivos de projeto
+COPY ["UBS.TradeRisk.Api/UBS.TradeRisk.Api.csproj", "UBS.TradeRisk.Api/"]
+COPY ["UBS.TradeRisk.Application/UBS.TradeRisk.Application.csproj", "UBS.TradeRisk.Application/"]
+COPY ["UBS.TradeRisk.Domain/UBS.TradeRisk.Domain.csproj", "UBS.TradeRisk.Domain/"]
+COPY ["UBS.TradeRisk.Infra/UBS.TradeRisk.Infra.csproj", "UBS.TradeRisk.Infra/"]
+
+# Restaurar dependências
+RUN dotnet restore "UBS.TradeRisk.Api/UBS.TradeRisk.Api.csproj"
+
+# Copiar código-fonte
+COPY . .
+
+# Build
+WORKDIR "/src/UBS.TradeRisk.Api"
+RUN dotnet build "UBS.TradeRisk.Api.csproj" -c Release -o /app/build
+
+# Stage 2: Publish
+FROM build AS publish
+RUN dotnet publish "UBS.TradeRisk.Api.csproj" -c Release -o /app/publish /p:UseAppHost=false
+
+# Stage 3: Runtime
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
+
+# Criar usuário não-root para segurança
+RUN groupadd -r appuser && useradd -r -g appuser appuser
+
+WORKDIR /app
+
+# Copiar binários publicados do stage anterior
+COPY --from=publish /app/publish .
+
+# Criar diretório de logs com permissões apropriadas
+RUN mkdir -p /app/logs && chown -R appuser:appuser /app/logs
+
+# Trocar para usuário não-root
+USER appuser
+
+# Definir a porta (deve corresponder ao appsettings.json ou variável ASPNETCORE_URLS)
+EXPOSE 8080
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
+    CMD dotnet /app/HealthCheck.dll || exit 1
+
+# Entrypoint
+ENTRYPOINT ["dotnet", "UBS.TradeRisk.Api.dll"]

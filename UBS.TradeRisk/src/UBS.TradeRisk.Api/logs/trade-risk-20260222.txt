@@ -1,0 +1,14 @@
+2026-02-22 15:30:57.273 -03:00 [INF] Iniciando a aplicação
+2026-02-22 15:30:57.888 -03:00 [INF] Now listening on: https://localhost:7111
+2026-02-22 15:30:57.893 -03:00 [INF] Now listening on: http://localhost:5029
+2026-02-22 15:30:57.973 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-22 15:30:57.975 -03:00 [INF] Hosting environment: Development
+2026-02-22 15:30:57.977 -03:00 [INF] Content root path: C:\Workspace\teste-ubs-trade-risk\UBS.TradeRisk\src\UBS.TradeRisk.Api
+2026-02-22 15:31:02.828 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7111/swagger/index.html - null null
+2026-02-22 15:31:03.466 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7111/swagger/index.html - 200 null text/html;charset=utf-8 654.6758ms
+2026-02-22 15:31:03.564 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7111/_vs/browserLink - null null
+2026-02-22 15:31:03.565 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7111/_framework/aspnetcore-browser-refresh.js - null null
+2026-02-22 15:31:03.616 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7111/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 52.6087ms
+2026-02-22 15:31:03.749 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7111/_vs/browserLink - 200 null text/javascript; charset=UTF-8 185.5772ms
+2026-02-22 15:31:04.161 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7111/swagger/v1/swagger.json - null null
+2026-02-22 15:31:04.193 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7111/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 32.6094ms
